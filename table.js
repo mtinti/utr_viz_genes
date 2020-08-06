@@ -61,9 +61,9 @@ d3.csv('data/data_gene.csv').then(
                     //tooltip_network.style("visibility", "visible");
 
                     $('#image_place_BSF img').remove();
-                    $('#image_place_BSF').prepend('<img class="img-responsive" style="padding-top: 5px" id="theImg" src="fig_bsf/'+d.peak_id+'.png" />')
+                    $('#image_place_BSF').prepend('<img class="img-responsive" style="padding-top: 5px" id="theImg" src="fig_bsf/'+d.peak_id+'_BSF.png" />')
                     $('#image_place_PCF img').remove();
-                    $('#image_place_PCF').prepend('<img class="img-responsive" style="padding-top: 5px" id="theImg" src="fig_pcf/'+d.peak_id+'.png" />')
+                    $('#image_place_PCF').prepend('<img class="img-responsive" style="padding-top: 5px" id="theImg" src="fig_pcf/'+d.peak_id+'_PCF.png" />')
                  
                 })
                 .on("mousemove", function(){return tooltip_network.style("top", (event.pageY-
